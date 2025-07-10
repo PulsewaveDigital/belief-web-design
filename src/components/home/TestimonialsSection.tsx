@@ -8,17 +8,17 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      quote: "Grace Community has been our spiritual home for over 5 years. The love, support, and genuine fellowship we've experienced here has transformed our family's faith journey.",
+      quote: "Soteria Higher Life Ministries has been our spiritual sanctuary for over 5 years. The healing, hope, and transformation we've experienced here has completely changed our family's faith journey.",
       author: "Sarah & Michael Thompson",
       role: "Church Members since 2019"
     },
     {
-      quote: "The youth ministry here changed my life. Pastor David and the team showed me what it means to live for Christ, and I've grown so much in my faith and leadership abilities.",
+      quote: "The youth ministry here transformed my life. Pastor David and the team showed me what it means to live for Christ, and I've grown so much in my faith and leadership abilities.",
       author: "Jessica Martinez",
       role: "Youth Ministry Graduate"
     },
     {
-      quote: "After losing my job, the church family rallied around us with prayer, encouragement, and practical support. This community truly lives out the love of Christ.",
+      quote: "After losing my job, the church family rallied around us with prayer, encouragement, and practical support. This community truly lives out the healing love of Christ.",
       author: "Robert Johnson",
       role: "Cell Group Member"
     },
@@ -51,12 +51,12 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-16 church-section-gradient">
+    <section className="py-16 soteria-section-gradient">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-3 rounded-full bg-secondary-light mb-6">
-            <Quote className="h-8 w-8 text-secondary" />
+          <div className="inline-flex items-center justify-center p-3 rounded-full bg-soteria-goldenYellow/20 mb-6">
+            <Quote className="h-8 w-8 text-soteria-goldenYellow" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 slide-up">
             Hear from Our Community
@@ -69,12 +69,12 @@ const TestimonialsSection = () => {
 
         {/* Testimonials Carousel */}
         <div className="max-w-4xl mx-auto">
-          <Card className="church-card-gradient border-0 relative overflow-hidden">
+          <Card className="soteria-card-gradient border-0 relative overflow-hidden">
             <CardContent className="py-12 px-8 md:px-16">
               <div className="text-center space-y-6">
                 {/* Quote Icon */}
                 <div className="mx-auto w-fit">
-                  <Quote className="h-12 w-12 text-secondary/30" />
+                  <Quote className="h-12 w-12 text-soteria-goldenYellow/30" />
                 </div>
 
                 {/* Testimonial Content */}
@@ -99,7 +99,7 @@ const TestimonialsSection = () => {
                     variant="ghost"
                     size="icon"
                     onClick={prevTestimonial}
-                    className="hover-gold rounded-full"
+                    className="hover-sky-blue rounded-full"
                   >
                     <ChevronLeft className="h-5 w-5" />
                   </Button>
@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
                         key={index}
                         className={`w-2 h-2 rounded-full transition-colors ${
                           index === currentTestimonial
-                            ? 'bg-secondary'
+                            ? 'bg-soteria-goldenYellow'
                             : 'bg-muted-foreground/30'
                         }`}
                         onClick={() => setCurrentTestimonial(index)}
@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
                     variant="ghost"
                     size="icon"
                     onClick={nextTestimonial}
-                    className="hover-gold rounded-full"
+                    className="hover-sky-blue rounded-full"
                   >
                     <ChevronRight className="h-5 w-5" />
                   </Button>
@@ -135,7 +135,7 @@ const TestimonialsSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <Card className="church-card-gradient border-0 max-w-2xl mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-2xl mx-auto">
             <CardContent className="py-8">
               <h3 className="text-xl font-bold text-primary mb-4">
                 Your Story Matters Too
@@ -146,7 +146,7 @@ const TestimonialsSection = () => {
               </p>
               <Button
                 size="lg"
-                className="church-gold-gradient hover:opacity-90 transition-opacity"
+                className="bg-soteria-goldenYellow text-soteria-textDark hover:bg-soteria-goldenYellow/90 transition-all"
               >
                 Share Your Story
               </Button>

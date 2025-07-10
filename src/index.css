@@ -4,64 +4,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Church Website Design System - Modern, Warm, and Welcoming */
+/* Soteria Higher Life Ministries Design System - Modern, Warm, and Welcoming */
 
 @layer base {
   :root {
-    /* Core Church Brand Colors */
+    /* Core Soteria Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 224 71% 4%;
+    --foreground: 222 84% 5%;
     
-    /* Church Primary - Deep Navy Blue */
-    --primary: 224 71% 4%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 224 39% 21%;
+    /* Soteria Primary - Royal Blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 91% 60%;
     
-    /* Church Secondary - Warm Gold */
-    --secondary: 45 93% 58%;
-    --secondary-foreground: 224 71% 4%;
-    --secondary-light: 45 90% 88%;
+    /* Soteria Secondary - Sky Blue */
+    --secondary: 201 96% 32%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 199 89% 48%;
     
-    /* Church Accent - Soft Blue */
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 98%;
-    --accent-light: 217 91% 95%;
+    /* Soteria Accent - Golden Yellow */
+    --accent: 43 96% 56%;
+    --accent-foreground: 222 84% 5%;
+    --accent-light: 45 93% 47%;
     
     /* UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card-foreground: 222 84% 5%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover-foreground: 222 84% 5%;
     
-    --muted: 217 33% 97%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 25% 27%;
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
     
-    --border: 217 33% 92%;
-    --input: 217 33% 92%;
-    --ring: 224 71% 4%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
     
-    /* Church Specific Colors */
-    --church-hero: 224 71% 4%;
-    --church-hero-light: 224 39% 21%;
-    --church-gold: 45 93% 58%;
-    --church-gold-light: 45 90% 88%;
-    --church-blue: 217 91% 60%;
-    --church-blue-light: 217 91% 95%;
+    /* Soteria Specific Colors */
+    --soteria-royal-blue: 221 83% 53%;
+    --soteria-sky-blue: 201 96% 32%;
+    --soteria-golden-yellow: 43 96% 56%;
+    --soteria-deep-navy: 222 47% 11%;
+    --soteria-crimson-red: 0 84% 60%;
+    --soteria-text-dark: 222 84% 5%;
+    --soteria-white: 0 0% 100%;
+    --soteria-dark-slate: 222 84% 5%;
+    --soteria-light-gray: 210 40% 98%;
+    --soteria-cool-gray: 215 25% 27%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(224 71% 4%) 0%, hsl(224 39% 21%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(217 33% 97%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(217 33% 98%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(45 80% 68%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(201 96% 32%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%) 0%, hsl(45 93% 47%) 100%);
     
     /* Shadows */
-    --shadow-card: 0 4px 6px -1px hsl(224 71% 4% / 0.1), 0 2px 4px -1px hsl(224 71% 4% / 0.06);
-    --shadow-hero: 0 20px 25px -5px hsl(224 71% 4% / 0.1), 0 10px 10px -5px hsl(224 71% 4% / 0.04);
-    --shadow-gold: 0 4px 14px 0 hsl(45 93% 58% / 0.25);
+    --shadow-card: 0 4px 6px -1px hsl(221 83% 53% / 0.1), 0 2px 4px -1px hsl(221 83% 53% / 0.06);
+    --shadow-hero: 0 20px 25px -5px hsl(221 83% 53% / 0.1), 0 10px 10px -5px hsl(221 83% 53% / 0.04);
+    --shadow-gold: 0 4px 14px 0 hsl(43 96% 56% / 0.25);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,68 +74,65 @@
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 84% 5%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    /* Dark mode church colors */
-    --background: 224 71% 4%;
-    --foreground: 0 0% 98%;
+    /* Dark mode Soteria colors */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
     
-    --primary: 45 93% 58%;
-    --primary-foreground: 224 71% 4%;
-    --primary-light: 45 80% 68%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 84% 5%;
+    --primary-light: 221 83% 53%;
     
-    --secondary: 224 39% 21%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-light: 224 39% 15%;
+    --secondary: 201 96% 32%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-light: 199 89% 48%;
     
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 98%;
-    --accent-light: 217 91% 95%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 222 84% 5%;
+    --accent-light: 45 93% 47%;
     
-    --card: 224 39% 15%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
     
-    --popover: 224 39% 15%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
     
-    --muted: 224 39% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 222 47% 11%;
+    --muted-foreground: 215 25% 27%;
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
     
-    --border: 224 39% 21%;
-    --input: 224 39% 21%;
-    --ring: 45 93% 58%;
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 43 96% 56%;
     
-    /* Dark mode church specific */
-    --church-hero: 224 71% 4%;
-    --church-hero-light: 224 39% 21%;
-    --church-gold: 45 93% 58%;
-    --church-gold-light: 45 90% 88%;
-    --church-blue: 217 91% 60%;
-    --church-blue-light: 217 91% 95%;
+    /* Dark mode Soteria specific */
+    --soteria-royal-blue: 217 91% 60%;
+    --soteria-sky-blue: 199 89% 48%;
+    --soteria-golden-yellow: 43 96% 56%;
+    --soteria-deep-navy: 222 84% 5%;
+    --soteria-crimson-red: 0 84% 60%;
+    --soteria-text-dark: 210 40% 98%;
+    --soteria-white: 0 0% 100%;
+    --soteria-dark-slate: 222 84% 5%;
+    --soteria-light-gray: 210 40% 98%;
+    --soteria-cool-gray: 215 25% 27%;
     
     /* Dark gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(224 71% 4%) 0%, hsl(224 39% 18%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(224 71% 4%) 0%, hsl(224 39% 15%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(224 39% 15%) 0%, hsl(224 39% 18%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(45 80% 68%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(222 47% 11%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(222 84% 5%) 0%, hsl(222 47% 11%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11%) 0%, hsl(215 25% 27%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 56%) 0%, hsl(45 93% 47%) 100%);
   }
 }
 
@@ -147,21 +148,21 @@
 }
 
 @layer components {
-  /* Church Component Variants */
-  .church-hero-gradient {
+  /* Soteria Component Variants */
+  .soteria-hero-gradient {
     background: var(--gradient-hero);
   }
   
-  .church-section-gradient {
+  .soteria-section-gradient {
     background: var(--gradient-section);
   }
   
-  .church-card-gradient {
+  .soteria-card-gradient {
     background: var(--gradient-card);
     box-shadow: var(--shadow-card);
   }
   
-  .church-gold-gradient {
+  .soteria-gold-gradient {
     background: var(--gradient-gold);
     box-shadow: var(--shadow-gold);
   }
@@ -195,7 +196,25 @@
   
   .hover-gold:hover {
     background: var(--gradient-gold);
-    color: hsl(var(--primary));
+    color: hsl(var(--soteria-text-dark));
+  }
+  
+  .hover-royal-blue {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-royal-blue:hover {
+    background: hsl(var(--soteria-royal-blue));
+    color: hsl(var(--soteria-white));
+  }
+  
+  .hover-sky-blue {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-sky-blue:hover {
+    background: hsl(var(--soteria-sky-blue));
+    color: hsl(var(--soteria-white));
   }
 }
 

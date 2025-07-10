@@ -28,27 +28,27 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					light: 'hsl(var(--primary-light))'
+					DEFAULT: '#1E40AF', // Royal Blue
+					foreground: '#FFFFFF',
+					light: '#3B82F6'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))',
-					light: 'hsl(var(--secondary-light))'
+					DEFAULT: '#0284C7', // Sky Blue
+					foreground: '#FFFFFF',
+					light: '#0EA5E9'
+				},
+				accent: {
+					DEFAULT: '#FBBF24', // Golden Yellow
+					foreground: '#111827',
+					light: '#FCD34D'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: '#DC2626', // Crimson Red
+					foreground: '#FFFFFF'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-					light: 'hsl(var(--accent-light))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -68,13 +68,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				church: {
-					hero: 'hsl(var(--church-hero))',
-					'hero-light': 'hsl(var(--church-hero-light))',
-					gold: 'hsl(var(--church-gold))',
-					'gold-light': 'hsl(var(--church-gold-light))',
-					blue: 'hsl(var(--church-blue))',
-					'blue-light': 'hsl(var(--church-blue-light))'
+				// Soteria specific colors
+				soteria: {
+					royalBlue: '#1E40AF',
+					skyBlue: '#0284C7',
+					goldenYellow: '#FBBF24',
+					deepNavy: '#1E293B',
+					crimsonRed: '#DC2626',
+					textDark: '#111827',
+					white: '#FFFFFF',
+					darkSlate: '#0F172A',
+					lightGray: '#F8FAFC',
+					coolGray: '#334155'
 				}
 			},
 			borderRadius: {

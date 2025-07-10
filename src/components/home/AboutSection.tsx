@@ -5,18 +5,18 @@ const AboutSection = () => {
   const values = [
     {
       icon: Heart,
-      title: 'Love',
-      description: 'We love God, love people, and love our community with genuine hearts.'
+      title: 'Healing',
+      description: 'We believe in the power of God to heal broken hearts, restore relationships, and bring wholeness to lives.'
     },
     {
       icon: Target,
-      title: 'Purpose',
-      description: 'We exist to make disciples who make disciples and transform lives.'
+      title: 'Transformation',
+      description: 'We exist to see lives transformed through the life-changing love and grace of Jesus Christ.'
     },
     {
       icon: Eye,
-      title: 'Vision',
-      description: 'To see every person in our community encounter the life-changing love of Jesus.'
+      title: 'Hope',
+      description: 'To be a beacon of hope in our community, sharing the light of Christ with everyone we encounter.'
     }
   ];
 
@@ -28,31 +28,30 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 church-section-gradient">
+    <section className="py-16 soteria-section-gradient">
       <div className="container mx-auto px-4">
         {/* About Content */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 slide-up">
-            About Grace Community
+            About Soteria Higher Life Ministries
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed slide-up">
-            For over 15 years, Grace Community has been a beacon of hope and love in our city. 
-            We are a diverse, vibrant family of believers committed to worshiping God, growing in faith, 
-            and serving our community with the transforming love of Jesus Christ.
+            For over 15 years, Soteria Higher Life Ministries has been a place of healing, hope, and transformation in our city. 
+            We are a diverse, vibrant family of believers committed to experiencing God's love, growing in faith, 
+            and serving our community with the transforming power of Jesus Christ.
           </p>
         </div>
 
         {/* Mission Statement */}
         <div className="mb-16">
-          <Card className="church-card-gradient max-w-4xl mx-auto border-0 hover-lift">
+          <Card className="soteria-card-gradient max-w-4xl mx-auto border-0 hover-lift">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-2xl text-primary">Our Mission</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-lg leading-relaxed text-foreground">
-                "To create a community where people can find and follow Jesus, 
-                grow in their faith, and make a lasting impact in the world through love, 
-                service, and authentic relationships."
+                "To create a sanctuary where people can find healing, discover hope, and experience transformation 
+                through faith in Jesus Christ, while building authentic relationships and serving our community with love."
               </p>
             </CardContent>
           </Card>
@@ -63,10 +62,10 @@ const AboutSection = () => {
           <h3 className="text-2xl font-bold text-center text-primary mb-8">Our Core Values</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <Card key={value.title} className={`church-card-gradient border-0 hover-lift fade-in`} style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card key={value.title} className={`soteria-card-gradient border-0 hover-lift fade-in`} style={{ animationDelay: `${index * 0.2}s` }}>
                 <CardHeader className="text-center">
-                  <div className="mx-auto mb-4 p-3 rounded-full bg-accent-light w-fit">
-                    <value.icon className="h-6 w-6 text-accent" />
+                  <div className="mx-auto mb-4 p-3 rounded-full bg-soteria-goldenYellow/20 w-fit">
+                    <value.icon className="h-6 w-6 text-soteria-goldenYellow" />
                   </div>
                   <CardTitle className="text-xl text-primary">{value.title}</CardTitle>
                 </CardHeader>
@@ -102,31 +101,31 @@ const AboutSection = () => {
             <h3 className="text-2xl font-bold text-primary">What We Believe</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full bg-soteria-goldenYellow mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">
                   <strong>The Bible</strong> as the inspired, authoritative Word of God
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full bg-soteria-goldenYellow mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">
                   <strong>Jesus Christ</strong> as our Lord and Savior, fully God and fully man
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full bg-soteria-goldenYellow mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">
                   <strong>Salvation by grace</strong> through faith, not by works
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full bg-soteria-goldenYellow mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">
                   <strong>The Holy Spirit's</strong> power to transform lives and empower ministry
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 rounded-full bg-soteria-goldenYellow mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">
                   <strong>The Church</strong> as the body of Christ, called to unity and mission
                 </p>
@@ -135,10 +134,10 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-6">
-            <Card className="church-card-gradient border-0">
+            <Card className="soteria-card-gradient border-0">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2 text-primary">
-                  <MapPin className="h-5 w-5" />
+                  <MapPin className="h-5 w-5 text-soteria-goldenYellow" />
                   <span>Find Us</span>
                 </CardTitle>
               </CardHeader>
@@ -149,10 +148,10 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="church-card-gradient border-0">
+            <Card className="soteria-card-gradient border-0">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2 text-primary">
-                  <Clock className="h-5 w-5" />
+                  <Clock className="h-5 w-5 text-soteria-goldenYellow" />
                   <span>Service Times</span>
                 </CardTitle>
               </CardHeader>

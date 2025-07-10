@@ -11,7 +11,7 @@ const ProgramsPreview = () => {
       description: 'Join us for inspiring worship, powerful messages, and community fellowship every Sunday.',
       time: '9:00 AM & 11:00 AM',
       href: '/programs/sunday-service',
-      color: 'text-blue-600'
+      color: 'text-soteria-royalBlue'
     },
     {
       icon: Book,
@@ -19,7 +19,7 @@ const ProgramsPreview = () => {
       description: 'Dive deeper into God\'s Word with our weekly Bible study groups for all ages.',
       time: 'Wednesdays 7:00 PM',
       href: '/teachings/bible-studies',
-      color: 'text-green-600'
+      color: 'text-soteria-skyBlue'
     },
     {
       icon: Users,
@@ -27,7 +27,7 @@ const ProgramsPreview = () => {
       description: 'Experience authentic community in our small group gatherings throughout the city.',
       time: 'Various Times',
       href: '/cells',
-      color: 'text-purple-600'
+      color: 'text-soteria-goldenYellow'
     },
     {
       icon: Heart,
@@ -35,7 +35,7 @@ const ProgramsPreview = () => {
       description: 'Dynamic programs designed to help young people grow in faith and friendship.',
       time: 'Fridays 6:30 PM',
       href: '/youth',
-      color: 'text-red-600'
+      color: 'text-soteria-crimsonRed'
     }
   ];
 
@@ -58,7 +58,7 @@ const ProgramsPreview = () => {
   ];
 
   return (
-    <section className="py-16 church-section-gradient">
+    <section className="py-16 soteria-section-gradient">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -76,14 +76,14 @@ const ProgramsPreview = () => {
           {programs.map((program, index) => (
             <Card
               key={program.title}
-              className={`church-card-gradient border-0 hover-lift group cursor-pointer fade-in`}
+              className={`soteria-card-gradient border-0 hover-lift group cursor-pointer fade-in`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-3 rounded-full bg-accent-light w-fit group-hover:bg-secondary-light transition-colors">
-                  <program.icon className={`h-6 w-6 ${program.color} group-hover:text-secondary`} />
+                <div className="mx-auto mb-4 p-3 rounded-full bg-soteria-goldenYellow/20 w-fit group-hover:bg-soteria-skyBlue/20 transition-colors">
+                  <program.icon className={`h-6 w-6 ${program.color} group-hover:text-soteria-skyBlue`} />
                 </div>
-                <CardTitle className="text-lg text-primary group-hover:text-secondary transition-colors">
+                <CardTitle className="text-lg text-primary group-hover:text-soteria-skyBlue transition-colors">
                   {program.title}
                 </CardTitle>
                 <CardDescription className="text-sm font-medium text-muted-foreground">
@@ -97,7 +97,7 @@ const ProgramsPreview = () => {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="w-full hover-gold group-hover:bg-secondary-light"
+                  className="w-full hover-sky-blue group-hover:bg-soteria-skyBlue/10"
                   asChild
                 >
                   <Link to={program.href} className="flex items-center justify-center space-x-2">
@@ -112,7 +112,7 @@ const ProgramsPreview = () => {
 
         {/* Call to Action */}
         <div className="text-center mb-16">
-          <Card className="church-card-gradient border-0 max-w-3xl mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-3xl mx-auto">
             <CardContent className="py-8">
               <h3 className="text-2xl font-bold text-primary mb-4">
                 Ready to Get Involved?
@@ -124,7 +124,7 @@ const ProgramsPreview = () => {
               </p>
               <Button
                 size="lg"
-                className="church-gold-gradient hover:opacity-90 transition-opacity"
+                className="bg-soteria-goldenYellow text-soteria-textDark hover:bg-soteria-goldenYellow/90 transition-all"
                 asChild
               >
                 <Link to="/programs">
@@ -143,12 +143,12 @@ const ProgramsPreview = () => {
             {upcomingEvents.map((event, index) => (
               <Card
                 key={event.title}
-                className={`church-card-gradient border-0 hover-lift fade-in`}
+                className={`soteria-card-gradient border-0 hover-lift fade-in`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardHeader>
                   <div className="flex items-center space-x-3">
-                    <div className="bg-secondary text-secondary-foreground rounded-lg px-3 py-2 text-sm font-bold">
+                    <div className="bg-soteria-goldenYellow text-soteria-textDark rounded-lg px-3 py-2 text-sm font-bold">
                       {event.date}
                     </div>
                     <CardTitle className="text-lg text-primary">{event.title}</CardTitle>

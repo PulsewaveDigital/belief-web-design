@@ -32,8 +32,8 @@ const FinanceSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-3 rounded-full bg-secondary-light mb-6">
-            <Heart className="h-8 w-8 text-secondary" />
+          <div className="inline-flex items-center justify-center p-3 rounded-full bg-soteria-goldenYellow/20 mb-6">
+            <Heart className="h-8 w-8 text-soteria-goldenYellow" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 slide-up">
             Tithes & Offerings
@@ -46,7 +46,7 @@ const FinanceSection = () => {
 
         {/* Heart Behind Giving */}
         <div className="mb-16">
-          <Card className="church-card-gradient border-0 max-w-4xl mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-4xl mx-auto">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-primary">The Heart Behind Giving</CardTitle>
             </CardHeader>
@@ -58,21 +58,21 @@ const FinanceSection = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center space-y-2">
-                  <div className="text-2xl font-bold text-secondary">40%</div>
+                  <div className="text-2xl font-bold text-soteria-goldenYellow">40%</div>
                   <h4 className="font-semibold text-primary">Ministry Programs</h4>
                   <p className="text-sm text-muted-foreground">
                     Supporting worship, discipleship, and community outreach
                   </p>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl font-bold text-secondary">30%</div>
+                  <div className="text-2xl font-bold text-soteria-goldenYellow">30%</div>
                   <h4 className="font-semibold text-primary">Staff & Operations</h4>
                   <p className="text-sm text-muted-foreground">
                     Maintaining facilities and supporting our ministry team
                   </p>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-2xl font-bold text-secondary">30%</div>
+                  <div className="text-2xl font-bold text-soteria-goldenYellow">30%</div>
                   <h4 className="font-semibold text-primary">Community Impact</h4>
                   <p className="text-sm text-muted-foreground">
                     Local missions, charity work, and community support
@@ -90,12 +90,12 @@ const FinanceSection = () => {
             {paymentMethods.map((method, index) => (
               <Card
                 key={method.title}
-                className={`church-card-gradient border-0 hover-lift fade-in`}
+                className={`soteria-card-gradient border-0 hover-lift fade-in`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardHeader className="text-center">
-                  <div className="mx-auto mb-4 p-3 rounded-full bg-accent-light w-fit">
-                    <method.icon className="h-6 w-6 text-accent" />
+                  <div className="mx-auto mb-4 p-3 rounded-full bg-soteria-goldenYellow/20 w-fit">
+                    <method.icon className="h-6 w-6 text-soteria-goldenYellow" />
                   </div>
                   <CardTitle className="text-xl text-primary">{method.title}</CardTitle>
                   <CardDescription className="leading-relaxed">
@@ -104,7 +104,7 @@ const FinanceSection = () => {
                 </CardHeader>
                 <CardContent className="text-center">
                   <Button
-                    className="church-gold-gradient hover:opacity-90 transition-opacity w-full"
+                    className="bg-soteria-crimsonRed text-white hover:bg-soteria-crimsonRed/90 transition-all w-full"
                     size="sm"
                   >
                     {method.action}
@@ -117,10 +117,10 @@ const FinanceSection = () => {
 
         {/* QR Code Section */}
         <div className="text-center">
-          <Card className="church-card-gradient border-0 max-w-md mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-md mx-auto">
             <CardHeader>
               <CardTitle className="flex items-center justify-center space-x-2 text-primary">
-                <QrCode className="h-5 w-5" />
+                <QrCode className="h-5 w-5 text-soteria-goldenYellow" />
                 <span>Quick Give</span>
               </CardTitle>
               <CardDescription>
@@ -140,7 +140,7 @@ const FinanceSection = () => {
 
         {/* Transparency Message */}
         <div className="mt-16 text-center">
-          <Card className="church-card-gradient border-0 max-w-2xl mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-2xl mx-auto">
             <CardContent className="py-8">
               <h4 className="text-lg font-semibold text-primary mb-4">
                 Financial Transparency

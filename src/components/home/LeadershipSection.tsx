@@ -9,28 +9,28 @@ const LeadershipSection = () => {
       name: 'Pastor Michael Johnson',
       title: 'Senior Pastor',
       bio: '15+ years of ministry experience, passionate about discipleship and community outreach. Holds M.Div from Seminary University.',
-      email: 'pastor.michael@gracecommunity.org',
+      email: 'pastor.michael@soteriahlm.org',
       phone: '(555) 123-4567'
     },
     {
       name: 'Pastor Sarah Williams',
       title: 'Associate Pastor - Women\'s Ministry',
       bio: 'Dedicated to empowering women in their faith journey. Background in counseling and spiritual direction.',
-      email: 'pastor.sarah@gracecommunity.org',
+      email: 'pastor.sarah@soteriahlm.org',
       phone: '(555) 123-4568'
     },
     {
       name: 'Pastor David Chen',
       title: 'Youth Pastor',
       bio: 'Energetic leader focused on youth development and mentorship. Former missionary with global perspective.',
-      email: 'pastor.david@gracecommunity.org',
+      email: 'pastor.david@soteriahlm.org',
       phone: '(555) 123-4569'
     },
     {
       name: 'Elder Jennifer Martinez',
       title: 'Elder - Community Outreach',
       bio: 'Long-time member with heart for community service. Leads our social justice and outreach initiatives.',
-      email: 'elder.jennifer@gracecommunity.org',
+      email: 'elder.jennifer@soteriahlm.org',
       phone: '(555) 123-4570'
     }
   ];
@@ -54,8 +54,8 @@ const LeadershipSection = () => {
           <div className="max-w-2xl mx-auto fade-in">
             <img
               src={leadershipImage}
-              alt="Grace Community Leadership Team"
-              className="w-full rounded-lg shadow-lg church-card-gradient"
+              alt="Soteria Higher Life Ministries Leadership Team"
+              className="w-full rounded-lg shadow-lg soteria-card-gradient"
             />
             <p className="text-sm text-muted-foreground mt-4">
               Our leadership team during our annual planning retreat
@@ -68,12 +68,12 @@ const LeadershipSection = () => {
           {leaders.map((leader, index) => (
             <Card
               key={leader.name}
-              className={`church-card-gradient border-0 hover-lift fade-in`}
+              className={`soteria-card-gradient border-0 hover-lift fade-in`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <CardHeader>
                 <CardTitle className="text-xl text-primary">{leader.name}</CardTitle>
-                <CardDescription className="text-secondary font-medium">
+                <CardDescription className="text-soteria-goldenYellow font-medium">
                   {leader.title}
                 </CardDescription>
               </CardHeader>
@@ -86,7 +86,7 @@ const LeadershipSection = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex items-center space-x-2 hover-gold"
+                    className="flex items-center space-x-2 hover-sky-blue"
                   >
                     <Mail className="h-4 w-4" />
                     <span className="text-sm">Email</span>
@@ -94,7 +94,7 @@ const LeadershipSection = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex items-center space-x-2 hover-gold"
+                    className="flex items-center space-x-2 hover-sky-blue"
                   >
                     <Phone className="h-4 w-4" />
                     <span className="text-sm">Call</span>
@@ -107,7 +107,7 @@ const LeadershipSection = () => {
 
         {/* Leadership Philosophy */}
         <div className="mt-16">
-          <Card className="church-card-gradient border-0 max-w-4xl mx-auto">
+          <Card className="soteria-card-gradient border-0 max-w-4xl mx-auto">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-primary">Our Leadership Philosophy</CardTitle>
             </CardHeader>

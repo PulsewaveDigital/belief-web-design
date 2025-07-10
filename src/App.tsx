@@ -12,6 +12,7 @@ import Cells from "./pages/Cells";
 import Youth from "./pages/Youth";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Sermons from "./pages/Sermons";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="cells" element={<Cells />} />
             <Route path="youth" element={<Youth />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="sermons" element={<Sermons />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

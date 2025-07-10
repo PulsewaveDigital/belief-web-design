@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sun, Moon, Church } from 'lucide-react';
+import { Menu, X, ChevronDown, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -21,24 +21,12 @@ const Header = () => {
 
   const navigationItems = [
     { name: 'Home', href: '/' },
-    {
-      name: 'Teachings',
-      href: '/teachings',
-      dropdown: [
-        { name: 'Sermons', href: '/teachings/sermons' },
-        { name: 'Bible Studies', href: '/teachings/bible-studies' },
-        { name: 'Devotionals', href: '/teachings/devotionals' },
-      ]
-    },
-    {
-      name: 'Programs',
-      href: '/programs',
-      dropdown: [
-        { name: 'Sunday Service', href: '/programs/sunday-service' },
-        { name: 'Prayer Meetings', href: '/programs/prayer' },
-        { name: 'Special Events', href: '/programs/events' },
-      ]
-    },
+    { name: 'Sermons', href: '/sermons' },
+    { name: 'Programs', href: '/programs', dropdown: [
+      { name: 'Sunday Service', href: '/programs/sunday-service' },
+      { name: 'Prayer Meetings', href: '/programs/prayer' },
+      { name: 'Special Events', href: '/programs/events' },
+    ] },
     { name: 'Media', href: '/media' },
     { name: 'Cells', href: '/cells' },
     { name: 'Youth', href: '/youth' },
@@ -54,9 +42,16 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <Church className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">Grace Community</span>
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <img 
+              src="/src/assets/logo.jpg" 
+              alt="Soteria Higher Life Ministries Logo" 
+              className="h-10 w-10 rounded-full object-cover"
+            />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-primary">Soteria</span>
+              <span className="text-sm text-muted-foreground">Higher Life Ministries</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,7 +63,7 @@ const Header = () => {
                     <DropdownMenuTrigger asChild>
                       <Button
                         variant="ghost"
-                        className={`flex items-center space-x-1 hover-gold ${
+                        className={`flex items-center space-x-1 hover-sky-blue ${
                           isActivePath(item.href) ? 'text-primary font-medium' : ''
                         }`}
                       >
@@ -81,7 +76,7 @@ const Header = () => {
                         <DropdownMenuItem key={dropdownItem.name} asChild>
                           <Link
                             to={dropdownItem.href}
-                            className={`w-full hover-gold ${
+                            className={`w-full hover-sky-blue ${
                               isActivePath(dropdownItem.href) ? 'text-primary font-medium' : ''
                             }`}
                           >
@@ -95,7 +90,7 @@ const Header = () => {
                   <Button
                     variant="ghost"
                     asChild
-                    className={`hover-gold ${
+                    className={`hover-sky-blue ${
                       isActivePath(item.href) ? 'text-primary font-medium' : ''
                     }`}
                   >
@@ -111,16 +106,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="icon"
-              onClick={toggleDarkMode}
-              className="hover-gold"
-            >
-              {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden hover-gold"
+              className="md:hidden hover-sky-blue"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -135,8 +121,8 @@ const Header = () => {
               <div key={item.name} className="space-y-1">
                 <Link
                   to={item.href}
-                  className={`block px-4 py-2 rounded-lg hover-gold transition-colors ${
-                    isActivePath(item.href) ? 'text-primary font-medium bg-accent-light' : ''
+                  className={`block px-4 py-2 rounded-lg hover-sky-blue transition-colors ${
+                    isActivePath(item.href) ? 'text-primary font-medium bg-accent/10' : ''
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -148,7 +134,7 @@ const Header = () => {
                       <Link
                         key={dropdownItem.name}
                         to={dropdownItem.href}
-                        className={`block px-4 py-1 text-sm rounded-lg hover-gold transition-colors ${
+                        className={`block px-4 py-1 text-sm rounded-lg hover-sky-blue transition-colors ${
                           isActivePath(dropdownItem.href) ? 'text-primary font-medium' : 'text-muted-foreground'
                         }`}
                         onClick={() => setIsMenuOpen(false)}
